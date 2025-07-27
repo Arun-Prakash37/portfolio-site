@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect, useRef } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,14 +20,14 @@ const Projects = () => {
             {
               scrollTrigger: {
                 trigger: el,
-                start: 'top 85%',
-                toggleActions: 'play none none reverse',
+                start: "top 85%",
+                toggleActions: "play none none reverse",
               },
               y: 0,
               opacity: 1,
               duration: 0.8,
               delay: i * 0.1,
-              ease: 'power3.out',
+              ease: "power3.out",
             }
           );
           triggers.push(trigger.scrollTrigger);
@@ -39,56 +39,59 @@ const Projects = () => {
 
     return () => {
       clearTimeout(timeout);
-      triggers.forEach(trigger => trigger.kill());
+      triggers.forEach((trigger) => trigger.kill());
     };
   }, []);
 
   const projects = [
     {
-      title: 'Portfolio Website',
-      description: 'A personal website to showcase my work and skills.',
-      image: '/images/portfolio-thumb.png',
-      tech: ['React', 'GSAP', 'Bootstrap'],
-      githubLink: 'https://github.com/Arun-24/my-portfolio',
+      title: "Portfolio Website",
+      description: "A personal website to showcase my work and skills.",
+      image: "./images/portfolio-thumb.png",
+      tech: ["React", "GSAP", "Bootstrap"],
+      githubLink: "https://github.com/Arun-24/my-portfolio",
     },
     {
-      title: 'Smart Cart App',
-      description: 'Flutter app with AI-based features to seamlessly checkout of Grocery stores.',
-      image: '/images/sparnet-thumb.png',
-      tech: ['Flutter', 'MongoDB', 'AI'],
-      githubLink: 'https://github.com/Arun-24/Seamless-Checkout-System',
+      title: "Smart Cart App",
+      description:
+        "Flutter app with AI-based features to seamlessly checkout of Grocery stores.",
+      image: "./images/sparnet-thumb.png",
+      tech: ["Flutter", "MongoDB", "AI"],
+      githubLink: "https://github.com/Arun-24/Seamless-Checkout-System",
     },
     {
-      title: 'Employee Course Enrollment System',
-      description: 'A website where employees can enroll and get certificates from their companies.',
-      image: '/images/course-thumb.png',
-      tech: ['React JS','Mysql','SpringBoot'],
-      githubLink: 'https://github.com/Arun-Prakash37/Mini-Project',
+      title: "Employee Course Enrollment System",
+      description:
+        "A website where employees can enroll and get certificates from their companies.",
+      image: "./images/course-thumb.png",
+      tech: ["React JS", "Mysql", "SpringBoot"],
+      githubLink: "https://github.com/Arun-Prakash37/Mini-Project",
     },
     {
-      title: 'Weather Report',
-      description: 'This website tells the weather report on the city which is searched.',
-      image: '/images/weather-app.png',
-      tech: ['React JS'],
-      githubLink:'https://github.com/Arun-24/Full-Stack-Development',
+      title: "Weather Report",
+      description:
+        "This website tells the weather report on the city which is searched.",
+      image: "./images/weather-app.png",
+      tech: ["React JS"],
+      githubLink: "https://github.com/Arun-24/Full-Stack-Development",
     },
     {
-      title: 'To-do list app',
-      description: 'User can record the things they want to do.',
-      image: '/images/To-do List.png',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      githubLink: 'https://github.com/Arun-24/Full-Stack-Development',
+      title: "To-do list app",
+      description: "User can record the things they want to do.",
+      image: "./images/To-do List.png",
+      tech: ["HTML", "CSS", "JavaScript"],
+      githubLink: "https://github.com/Arun-24/Full-Stack-Development",
     },
     // Add more projects if needed
   ];
 
   const cardGradients = [
-    'linear-gradient(135deg, #3b3f99, #1f1f1f)', // Slate Blue
-    'linear-gradient(135deg, #1a703cff, #2c2c2c)', // Emerald
-    'linear-gradient(135deg, #5a3f5b, #1a1a1a)', // Plum
-    'linear-gradient(135deg, #2c3e50, #1f1f1f)', // Dark Blue
-    'linear-gradient(135deg, #6d701aff, #1f1f1f)', // Green
-    'linear-gradient(135deg, #2a2a2e, #000000)', // Charcoal
+    "linear-gradient(135deg, #3b3f99, #1f1f1f)", // Slate Blue
+    "linear-gradient(135deg, #1a703cff, #2c2c2c)", // Emerald
+    "linear-gradient(135deg, #5a3f5b, #1a1a1a)", // Plum
+    "linear-gradient(135deg, #2c3e50, #1f1f1f)", // Dark Blue
+    "linear-gradient(135deg, #6d701aff, #1f1f1f)", // Green
+    "linear-gradient(135deg, #2a2a2e, #000000)", // Charcoal
   ];
 
   return (
@@ -96,12 +99,12 @@ const Projects = () => {
       id="projects"
       className="py-5"
       style={{
-        background: 'linear-gradient(135deg, #1f1f1f, #2c2c2c)',
-        color: '#f8f9fa',
+        background: "linear-gradient(135deg, #1f1f1f, #2c2c2c)",
+        color: "#f8f9fa",
       }}
     >
       <div className="container">
-        <h2 className="text-center mb-5 fw-bold" style={{ fontSize: '2.7rem' }}>
+        <h2 className="text-center mb-5 fw-bold" style={{ fontSize: "2.7rem" }}>
           Projects
         </h2>
 
@@ -116,17 +119,18 @@ const Projects = () => {
                 className="card text-white h-100 shadow border-0"
                 style={{
                   background: cardGradients[i % cardGradients.length],
-                  borderRadius: '12px',
-                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                  borderRadius: "12px",
+                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
                   opacity: 1, // fallback in case GSAP doesn't run
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.4)';
+                  e.currentTarget.style.transform = "scale(1.03)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 20px rgba(0,0,0,0.4)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = 'none';
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.boxShadow = "none";
                 }}
               >
                 <img
@@ -134,10 +138,10 @@ const Projects = () => {
                   className="card-img-top"
                   alt={project.title}
                   style={{
-                    height: '200px',
-                    objectFit: 'cover',
-                    borderTopLeftRadius: '12px',
-                    borderTopRightRadius: '12px',
+                    height: "200px",
+                    objectFit: "cover",
+                    borderTopLeftRadius: "12px",
+                    borderTopRightRadius: "12px",
                   }}
                 />
                 <div className="card-body d-flex flex-column">

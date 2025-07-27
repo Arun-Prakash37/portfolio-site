@@ -166,7 +166,7 @@ const About = () => {
             <div className="text-center text-md-start mb-4">
               <img
                 ref={imageRef}
-                src="/images/about-image.svg"
+                src="./images/about-image.svg"
                 alt="Arun"
                 className="img-fluid rounded-4 shadow-sm"
                 style={{
