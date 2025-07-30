@@ -47,7 +47,7 @@ const Projects = () => {
     {
       title: "Portfolio Website",
       description: "A personal website to showcase my work and skills.",
-      image: "./images/portfolio-thumb.png",
+      image: "./assets/portfolio-thumb.png",
       tech: ["React", "GSAP", "Bootstrap"],
       githubLink: "https://github.com/Arun-24/my-portfolio",
     },
@@ -55,7 +55,7 @@ const Projects = () => {
       title: "Smart Cart App",
       description:
         "Flutter app with AI-based features to seamlessly checkout of Grocery stores.",
-      image: "./images/sparnet-thumb.png",
+      image: "./assets/sparnet-thumb.png",
       tech: ["Flutter", "MongoDB", "AI"],
       githubLink: "https://github.com/Arun-24/Seamless-Checkout-System",
     },
@@ -63,7 +63,7 @@ const Projects = () => {
       title: "Employee Course Enrollment System",
       description:
         "A website where employees can enroll and get certificates from their companies.",
-      image: "./images/course-thumb.png",
+      image: "./assets/course-thumb.png",
       tech: ["React JS", "Mysql", "SpringBoot"],
       githubLink: "https://github.com/Arun-Prakash37/Mini-Project",
     },
@@ -71,14 +71,14 @@ const Projects = () => {
       title: "Weather Report",
       description:
         "This website tells the weather report on the city which is searched.",
-      image: "./images/weather-app.png",
+      image: "./assets/weather-app.png",
       tech: ["React JS"],
       githubLink: "https://github.com/Arun-24/Full-Stack-Development",
     },
     {
       title: "To-do list app",
       description: "User can record the things they want to do.",
-      image: "./images/To-do List.png",
+      image: "./assets/To-do List.png",
       tech: ["HTML", "CSS", "JavaScript"],
       githubLink: "https://github.com/Arun-24/Full-Stack-Development",
     },
