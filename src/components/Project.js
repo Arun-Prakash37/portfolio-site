@@ -2,6 +2,12 @@ import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import portfolioImg from "../assets/portfolio-thumb.png";
+import sparnetImg from "../assets/sparnet-thumb.png";
+import courseImg from "../assets/course-thumb.png";
+import weatherImg from "../assets/weather-app.png";
+import todoImg from "../assets/todo-List.png";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,35 +53,35 @@ const Projects = () => {
   {
     title: "Portfolio Website",
     description: "A personal website to showcase my work and skills.",
-    image: require("../assets/portfolio-thumb.png"),
+    image: portfolioImg,
     tech: ["React", "GSAP", "Bootstrap"],
     githubLink: "https://github.com/Arun-24/my-portfolio",
   },
   {
     title: "Smart Cart App",
     description: "Flutter app with AI-based features to seamlessly checkout of Grocery stores.",
-    image: require("../assets/sparnet-thumb.png"),
+    image: sparnetImg,
     tech: ["Flutter", "MongoDB", "AI"],
     githubLink: "https://github.com/Arun-24/Seamless-Checkout-System",
   },
   {
     title: "Employee Course Enrollment System",
     description: "A website where employees can enroll and get certificates from their companies.",
-    image: require("../assets/course-thumb.png"),
+    image: courseImg,
     tech: ["React JS", "Mysql", "SpringBoot"],
     githubLink: "https://github.com/Arun-Prakash37/Mini-Project",
   },
   {
     title: "Weather Report",
     description: "This website tells the weather report on the city which is searched.",
-    image: require("../assets/weather-app.png"),
+    image: weatherImg,
     tech: ["React JS"],
     githubLink: "https://github.com/Arun-24/Full-Stack-Development",
   },
   {
     title: "To-do list app",
     description: "User can record the things they want to do.",
-    image: require("../assets/To-do List.png"),
+    image: todoImg,
     tech: ["HTML", "CSS", "JavaScript"],
     githubLink: "https://github.com/Arun-24/Full-Stack-Development",
   },
