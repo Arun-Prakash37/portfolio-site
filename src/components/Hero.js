@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import gsap from "gsap";
+import profileImage from '../assets/profile.jpg';
 
 const Hero = () => {
   // Refs for each animated element
@@ -118,7 +119,7 @@ const Hero = () => {
             >
               <img
                 ref={imgRef}
-                src="./images/profile.jpg"
+                src={profileImage}
                 alt="Arun"
                 className="img-fluid"
                 style={{
