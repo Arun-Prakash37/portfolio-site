@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {about} from './images/about-image.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -166,7 +167,7 @@ const About = () => {
             <div className="text-center text-md-start mb-4">
               <img
                 ref={imageRef}
-                src="./images/about-image.svg"
+                src={about}
                 alt="Arun"
                 className="img-fluid rounded-4 shadow-sm"
                 style={{
