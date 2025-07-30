@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import {aboutImage} from '../assets/about-image.svg';
+import aboutImage from '../assets/about-image.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
