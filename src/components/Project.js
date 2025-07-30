@@ -44,46 +44,43 @@ const Projects = () => {
   }, []);
 
   const projects = [
-    {
-      title: "Portfolio Website",
-      description: "A personal website to showcase my work and skills.",
-      image: "./assets/portfolio-thumb.png",
-      tech: ["React", "GSAP", "Bootstrap"],
-      githubLink: "https://github.com/Arun-24/my-portfolio",
-    },
-    {
-      title: "Smart Cart App",
-      description:
-        "Flutter app with AI-based features to seamlessly checkout of Grocery stores.",
-      image: "./assets/sparnet-thumb.png",
-      tech: ["Flutter", "MongoDB", "AI"],
-      githubLink: "https://github.com/Arun-24/Seamless-Checkout-System",
-    },
-    {
-      title: "Employee Course Enrollment System",
-      description:
-        "A website where employees can enroll and get certificates from their companies.",
-      image: "./assets/course-thumb.png",
-      tech: ["React JS", "Mysql", "SpringBoot"],
-      githubLink: "https://github.com/Arun-Prakash37/Mini-Project",
-    },
-    {
-      title: "Weather Report",
-      description:
-        "This website tells the weather report on the city which is searched.",
-      image: "./assets/weather-app.png",
-      tech: ["React JS"],
-      githubLink: "https://github.com/Arun-24/Full-Stack-Development",
-    },
-    {
-      title: "To-do list app",
-      description: "User can record the things they want to do.",
-      image: "./assets/To-do List.png",
-      tech: ["HTML", "CSS", "JavaScript"],
-      githubLink: "https://github.com/Arun-24/Full-Stack-Development",
-    },
-    // Add more projects if needed
-  ];
+  {
+    title: "Portfolio Website",
+    description: "A personal website to showcase my work and skills.",
+    image: require("../assets/portfolio-thumb.png"),
+    tech: ["React", "GSAP", "Bootstrap"],
+    githubLink: "https://github.com/Arun-24/my-portfolio",
+  },
+  {
+    title: "Smart Cart App",
+    description: "Flutter app with AI-based features to seamlessly checkout of Grocery stores.",
+    image: require("../assets/sparnet-thumb.png"),
+    tech: ["Flutter", "MongoDB", "AI"],
+    githubLink: "https://github.com/Arun-24/Seamless-Checkout-System",
+  },
+  {
+    title: "Employee Course Enrollment System",
+    description: "A website where employees can enroll and get certificates from their companies.",
+    image: require("../assets/course-thumb.png"),
+    tech: ["React JS", "Mysql", "SpringBoot"],
+    githubLink: "https://github.com/Arun-Prakash37/Mini-Project",
+  },
+  {
+    title: "Weather Report",
+    description: "This website tells the weather report on the city which is searched.",
+    image: require("../assets/weather-app.png"),
+    tech: ["React JS"],
+    githubLink: "https://github.com/Arun-24/Full-Stack-Development",
+  },
+  {
+    title: "To-do list app",
+    description: "User can record the things they want to do.",
+    image: require("../assets/To-do List.png"),
+    tech: ["HTML", "CSS", "JavaScript"],
+    githubLink: "https://github.com/Arun-24/Full-Stack-Development",
+  },
+];
+
 
   const cardGradients = [
     "linear-gradient(135deg, #3b3f99, #1f1f1f)", // Slate Blue
