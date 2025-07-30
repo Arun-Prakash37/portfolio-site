@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import gsap from "gsap";
-import profileImage from '../assets/profile.jpg';
+import profileImage from '../assets/profile.JPG';
 
 const Hero = () => {
   // Refs for each animated element
