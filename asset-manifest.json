@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio-site/static/css/main.7f3bd79c.css",
-    "main.js": "/portfolio-site/static/js/main.87cda8b4.js",
+    "main.js": "/portfolio-site/static/js/main.ebae2169.js",
     "static/js/453.438d9e50.chunk.js": "/portfolio-site/static/js/453.438d9e50.chunk.js",
-    "static/media/profile.JPG": "/portfolio-site/static/media/profile.011cd284e0f1c434415d.JPG",
+    "static/media/profile.png": "/portfolio-site/static/media/profile.011cd284e0f1c434415d.png",
     "static/media/todo-List.png": "/portfolio-site/static/media/todo-List.653eaba2e79d0c572a37.png",
     "static/media/weather-app.png": "/portfolio-site/static/media/weather-app.56b3d2cd8dfffb51cc89.png",
     "static/media/sparnet-thumb.png": "/portfolio-site/static/media/sparnet-thumb.c8e9b7ef7491b1134f8f.png",
@@ -12,11 +12,11 @@
     "static/media/about-image.svg": "/portfolio-site/static/media/about-image.620a06d69f23e45f9064f888fcd7722b.svg",
     "index.html": "/portfolio-site/index.html",
     "main.7f3bd79c.css.map": "/portfolio-site/static/css/main.7f3bd79c.css.map",
-    "main.87cda8b4.js.map": "/portfolio-site/static/js/main.87cda8b4.js.map",
+    "main.ebae2169.js.map": "/portfolio-site/static/js/main.ebae2169.js.map",
     "453.438d9e50.chunk.js.map": "/portfolio-site/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f3bd79c.css",
-    "static/js/main.87cda8b4.js"
+    "static/js/main.ebae2169.js"
   ]
 }
